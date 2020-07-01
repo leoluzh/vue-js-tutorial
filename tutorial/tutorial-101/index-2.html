@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <!-- versão de desenvolvimento, inclui avisos úteis no console  -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"/>
+    <body>
+        <div id="app-2">
+            <div v-bind:title="message">
+                Pare o mouse sobre mim e veja a dica interligada dinamicamente!
+            </div> 
+        </div> 
+
+    <script type="text/javascript"> 
+        var app = new Vue({
+            el: "#app-2" ,
+            data: {
+                message: "Você carregou esta página em " + new Date().toLocaleString()
+            } ,
+        });
+    </script> 
+
+    </body>
+
+ 
+<html>
